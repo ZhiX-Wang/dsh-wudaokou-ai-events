@@ -1,0 +1,18 @@
+{
+  "name": "dsh-wudaokou-ai-events",
+  "version": "0.1.2",
+  "description": "搜索五道口、清华及海淀附近的 AI 线下活动，读取来源，保存检索历史并标记重复信息。",
+  "type": "module",
+  "main": "index.js",
+  "exports": { ".": "./index.js" },
+  "files": ["index.js", "core.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "license": "MIT",
+  "engines": { "node": ">=22.19.0", "dsh": ">=0.2.1-rc.2 <0.2.2-0" },
+  "author": "ZhiX-Wang",
+  "repository": { "type": "git", "url": "https://github.com/ZhiX-Wang/dsh-wudaokou-ai-events.git" },
+  "homepage": "https://github.com/ZhiX-Wang/dsh-wudaokou-ai-events#readme",
+  "bugs": { "url": "https://github.com/ZhiX-Wang/dsh-wudaokou-ai-events/issues" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "events", "wudaokou"]
+}
